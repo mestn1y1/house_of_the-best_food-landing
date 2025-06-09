@@ -1,32 +1,100 @@
-:root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/img/hero-mob.jpg');
+  background-size: cover;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero-mob-2x.jpg');
+    background-size: cover;
+  }
 }
 
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
+.title-block {
   text-align: center;
+  margin: 0 auto;
+  padding-top: 300px;
+}
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  color: #d67e35;
+}
+.hero-title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #d67e35;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 46px;
+  width: 137px;
+  height: 47px;
+  background: #ff7400;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url('/img/hero-desk.jpg');
+    background-size: cover;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('/img/hero-desk-2x.jpg');
+      background-size: cover;
+    }
+  }
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-block {
+    padding-top: 325px;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .hero-subtitle {
+    font-size: 50px;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text::before,
+  .hero-text::after {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 2px;
+    background-color: #c4c4c4;
+    margin-right: 8px;
+  }
+  .hero-text::after {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+  .hero-btn {
+    margin: 0;
+    margin-left: 180px;
+    margin-top: 20px;
+  }
 }
