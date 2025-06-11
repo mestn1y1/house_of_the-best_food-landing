@@ -50,9 +50,71 @@
   }
   .nav {
     display: flex;
+    align-items: center;
   }
   .nav-list {
     display: flex;
     gap: 24px;
+  }
+
+  .cart-link {
+    display: flex;
+    align-items: center;
+  }
+  .cart-link::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(90deg);
+  }
+  .cart-icon {
+    width: 14px;
+    height: 14px;
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 2px;
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .nav-address {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-address-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  .nav-address-text {
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .nav-address-icon {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 2px;
+    width: 24px;
+    height: 24px;
+  }
+  .reserve-btn {
+    padding: 14px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background: #ff7400;
+    margin-left: 46px;
   }
 }
