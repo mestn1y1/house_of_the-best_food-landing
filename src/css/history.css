@@ -1,18 +1,31 @@
-@keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
-  }
-  to {
-    transform: translateX(-104%) translateY(-50%);
-  }
+.history .container {
+  display: flex;
+  flex-direction: column;
 }
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
-  }
+
+.history-title {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.history-title span {
+  color: #d67e34;
+}
+
+.history-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #656363;
+  margin-bottom: 48px;
+}
+
+.history-card-list {
+  display: flex;
+  flex-direction: column;
 }
