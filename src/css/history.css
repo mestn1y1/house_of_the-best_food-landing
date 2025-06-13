@@ -28,4 +28,107 @@
 .history-card-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 44px;
+}
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history-card span {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #bc9060;
+}
+
+.history-card p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.history-img-block {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 48px;
+}
+
+.history-img-1 {
+  position: absolute;
+  width: 126px;
+  height: 154px;
+  top: 30px;
+  z-index: 3;
+}
+
+.history-img-2 {
+  position: absolute;
+  width: 138px;
+  height: 222px;
+  left: 100px;
+  z-index: 1;
+}
+
+.history-img-3 {
+  position: absolute;
+  width: 136px;
+  height: 154px;
+  right: 0;
+  top: 110px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1200px) {
+  .history .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .history-title-block {
+    width: 100%;
+  }
+
+  .history-title {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .history-text {
+    width: 444px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .history-card-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history-img-block {
+    padding-top: 40px;
+    height: 498px;
+    display: flex;
+  }
+  .history-img-1 {
+    width: 234px;
+    height: 300px;
+    top: 100px;
+  }
+  .history-img-2 {
+    width: 255px;
+    height: 430px;
+    right: 0;
+    left: 190px;
+  }
+  .history-img-3 {
+    width: 254px;
+    height: 300px;
+    top: 240px;
+  }
 }
