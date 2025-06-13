@@ -1,29 +1,62 @@
-.back-link {
-  position: relative;
-  display: inline-block;
-  padding: 4px 8px;
-  margin-top: 32px;
-  border: 1px solid;
-  border-radius: 8px;
+.advantages {
+  margin-bottom: 48px;
+  margin-top: -100px;
 }
-.back-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 16px;
-  height: 16px;
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
-  transition: 300ms ease-in;
-  transition-property: opacity;
-  opacity: 0;
-  animation: slide 500ms linear infinite alternate-reverse both;
-  animation-play-state: paused;
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  height: 276px;
+  background-color: #fff;
 }
-.back-link:hover::before {
-  opacity: 1;
-  animation-play-state: running;
+.advantages-item:nth-child(2n) p {
+  width: 160px;
+  margin-top: 24px;
+}
+.advantages-item:nth-child(3n) p {
+  margin-top: 24px;
+}
+
+.advantages-item-title {
+  font-weight: 400;
+  font-size: 26px;
+  color: #2c2c2c;
+}
+
+.advantages-item-title span {
+  color: #bc9060;
+}
+.advantages-item-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #656363;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .advantages-item {
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  .advantages-item-text {
+    font-size: 22px;
+  }
+  .advantages-item:nth-child(2n) p,
+  .advantages-item:nth-child(3n) p {
+    margin-top: 26px;
+  }
 }
