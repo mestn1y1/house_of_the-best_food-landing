@@ -1,19 +1,79 @@
-.badges-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+.banner {
+  background-image: url('/img/bg-mob-bunner.jpg');
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 48px;
 }
-.badges-link {
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .banner {
+    background-image: url('/img/bg-mob-bunner-2x.jpg');
+    background-size: cover;
+  }
+}
+.container {
+}
+
+.banner-title-block {
+  margin-bottom: 40px;
+}
+.banner-title {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #d67e34;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.banner-text {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.banner-btn {
   display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+  background: #ff7400;
+  width: 138px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url('/img/bg-desk-bunner.jpg');
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .banner {
+      background-image: url('/img/bg-desk-bunner-2x.jpg');
+      background-size: cover;
+    }
+  }
+  .banner-title-block {
+    width: 600px;
+  }
+  .banner-title {
+    font-size: 52px;
+  }
+
+  .banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-btn {
+    width: 158px;
+    height: 48px;
+    margin: 0;
+  }
 }
