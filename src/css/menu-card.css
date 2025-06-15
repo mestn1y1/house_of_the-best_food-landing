@@ -1,0 +1,65 @@
+.menu-card {
+  background-color: white;
+  padding: 80px 28px 28px 28px;
+  position: relative;
+}
+.menu-card-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d67e34;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+}
+.menu-card-image-block {
+  position: relative;
+  margin-bottom: 18px;
+}
+.menu-card-img {
+  border-radius: 100%;
+  width: 100%;
+}
+.menu-card-price {
+  position: absolute;
+  background: #d67e34;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: 8px solid #fff;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+.menu-card-title {
+  font-weight: 400;
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+}
+.menu-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+.menu-card-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background: #d67e34;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}

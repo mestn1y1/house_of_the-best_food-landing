@@ -22,7 +22,7 @@ new Swiper('#menuSwiper', {
       allowTouchMove: true,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       allowTouchMove: false,
     },
   },
