@@ -1,0 +1,28 @@
+.menu {
+  background-image: url('/img/bar-mob.jpg');
+  background-size: cover;
+  padding-top: 62px;
+  padding-bottom: 108px;
+  margin-bottom: 48px;
+  height: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .menu {
+    background-image: url('/img/bar-mob-2x.jpg');
+    background-size: cover;
+  }
+}
+
+.menu-title {
+  font-weight: 400;
+  font-size: 54px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 98px;
+}
+
+.swiper {
+  height: 300px;
+}
