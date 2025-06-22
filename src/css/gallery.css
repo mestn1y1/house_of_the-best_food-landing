@@ -1,0 +1,36 @@
+.gallery {
+  padding-top: 48px;
+}
+
+.gallery-title {
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}
+
+.gallery-title span {
+  color: #d67e34;
+}
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-item-img {
+  width: 300px;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .gallery-item-img {
+    width: 100%;
+  }
+}
