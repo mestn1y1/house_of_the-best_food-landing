@@ -1,0 +1,29 @@
+.cooks {
+  margin-top: 48px;
+}
+
+.cooks-title {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 48px;
+}
+.cooks-title span {
+  color: #d67e34;
+}
+
+.cooks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .cooks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
