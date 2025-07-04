@@ -1,0 +1,26 @@
+.footer {
+  background-image: url('/img/reservation-bg-mob.jpg');
+  background-size: cover;
+
+  height: 700px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url('/img/reservation-bg-mob-2x.jpg');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-image: url('/img/reservation-bg-desk.jpg');
+    height: 800px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url('/img/reservation-bg-desk-2x.jpg');
+    }
+  }
+}
