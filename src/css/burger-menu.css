@@ -1,4 +1,7 @@
 .burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   top: 0;
   right: -100%;
@@ -8,8 +11,78 @@
   padding: 16px;
   z-index: 1000;
   transition: right 0.3s ease-in-out;
+  background-image: url('/img/pizza-mob-2x.jpg');
+  background-size: cover;
 }
 
 .burger-menu.active {
   right: 0;
+}
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.menu-close {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+}
+.header-close-icon {
+  stroke: none;
+  fill: transparent;
+  width: 32px;
+  height: 32px;
+}
+.burger-nav {
+  align-content: center;
+}
+.burger-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.burger-nav-item {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-link {
+}
+.burger-nav-address {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+.burger-nav-address-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+.nav-address-icon {
+  fill: #fff;
+}
+.burger-nav-address-text {
+  color: #fff;
+  font-weight: normal;
+}
+.burger-reserve-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 137px;
+  height: 47px;
+  background: #ff7400;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
 }
