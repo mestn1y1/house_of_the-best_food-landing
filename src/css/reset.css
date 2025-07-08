@@ -1,5 +1,8 @@
 @import 'modern-normalize/modern-normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
   display: flex;
