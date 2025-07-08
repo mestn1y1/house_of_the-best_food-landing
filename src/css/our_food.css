@@ -63,6 +63,7 @@
   }
   .food-img {
     margin-bottom: 0;
+    height: 100%;
   }
   .food-item-img {
     width: 162px;
@@ -83,7 +84,7 @@
   .food-list-item-title::after {
     content: '';
     display: block;
-    width: 204px;
+    width: 120px;
     transform: rotate(180deg);
     border-bottom: 1px dashed #000;
     margin-left: 8px;

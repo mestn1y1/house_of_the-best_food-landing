@@ -1,17 +1,45 @@
 .backdrop {
-  /* display: none; */
-  margin: 0 auto;
-  width: 320px;
-  background-color: rgba(223, 160, 118, 0.13);
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+}
+.hidden {
+  display: none;
 }
 
+.reservation-form-container {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+}
+
+.reservation-form-container h2 {
+  text-align: center;
+}
+
+.close-form {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.form-close-icon {
+  fill: transparent;
+  stroke: #ff7400;
+  stroke-width: 4px;
+}
 .reservation-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #fff;
 }
 
 .reservation-form label {
@@ -30,6 +58,7 @@
   display: block;
   margin: 0 auto;
   font-size: 14px;
+  font-weight: bold;
   width: 138px;
   height: 42px;
   background-color: #ff7400;
@@ -43,4 +72,10 @@
 
 .reservation-form button:hover {
   background-color: #e25a00;
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation-form {
+    width: 400px;
+  }
 }
